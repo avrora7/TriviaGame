@@ -98,42 +98,5 @@ p {
 }
 
 .button:hover {
-    opacity: 0.8;
+    opacity: 0.7;
 }
-
-#instructions {
-    text-align: center;
-}
-
-#compChoice,
-#totalScore {
-    width: 280px;
-    font-size: 26px;
-    background-color: rgb(214, 192, 236);
-    text-align: center;
-    border: 2px;
-    border-style: solid;
-    padding: 25px;
-    margin: auto;
-}
-
-#gameStats {
-    width: 420px;
-    font-size: 18px;
-    background-color: rgb(229, 186, 211);
-    text-align: center;
-    border: 2px;
-    border-style: solid;
-    padding: 25px;
-    margin: auto;
-}
-
-#gameStats,
-#compChoice  {
-    margin-top: 10px;
-}
-
-#animeBtns {
-    width: 950px;
-    margin: auto;
-} */

@@ -1,4 +1,4 @@
-const correctAnswers = ["2", "3", "4", "1", "1", "1", "1", "1", "1"];
+const correctAnswers = ["2", "3", "4", "1", "2", "3", "2", "4", "1"];
 let countdown = 0;
 let numCorrAnsw = 3;
 let numIncorrAnsw = 5;
@@ -30,6 +30,8 @@ function handleDone() {
     clearInterval(countdownInterval);
 }
 
+// match chosen answer with correct answer - 
+// increase number of correct answers if match, increase number of incorrect answers if no match
 function matchQandA() {
     for (i = 0; i < correctAnswers.length; i++) {
         let selector = "input[name=q_" + (i+1) + "]:checked"; 
@@ -49,7 +51,7 @@ function matchQandA() {
 }
 
 // reset game either on start or restart -
-// reset correct and incorect answers counter, re/start coutdown,
+// reset correct and incorect answers counter, re/start coutdown
 function resetGame() {
     $("form")[0].reset();
     countdown = 120;
